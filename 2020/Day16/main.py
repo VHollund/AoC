@@ -1,4 +1,4 @@
-from Helpers.GetInput import get_input_split_lines,get_file_split_lines
+from Helpers.GetInput import get_input_input_joined,get_file_split_lines
 import re
 
 def check_invalid_part1(ranges,line):
@@ -104,6 +104,6 @@ def day_16_2(rules, tickets):
 
 
 if __name__ == '__main__':
-    tickets = get_input_split_lines(16)
+    tickets = get_input_input_joined(2020, 16)
     rules = get_file_split_lines("Day16\\rules.txt")
     day_16_2(rules, tickets)

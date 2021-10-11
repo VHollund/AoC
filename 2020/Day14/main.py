@@ -1,4 +1,4 @@
-from  Helpers.GetInput import get_input_split_lines
+from  Helpers.GetInput import get_input_input_joined
 import re
 
 def intToBinString(intVal):
@@ -103,5 +103,5 @@ def day_14_2(raw_input):
 
 
 if __name__ == '__main__':
-    raw_input = get_input_split_lines(14)
+    raw_input = get_input_input_joined(14)
     day_14_2(raw_input)
