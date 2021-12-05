@@ -84,4 +84,4 @@ if __name__ == "__main__":
             if boards[z].addNcheck(x):
                 print(boards[z].sum_unmarked()*x)
                 boards[z].print()
-
+    #Donesidoone
