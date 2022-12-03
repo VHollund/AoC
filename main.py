@@ -1,5 +1,4 @@
-year2022 = __import__('2022')
-
+from Y2022.Day03 import main
 
 if __name__=="__main__":
-    pass
+    main.Day3()

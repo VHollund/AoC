@@ -2,12 +2,12 @@ import os
 
 
 def get_input_input_joined(year, day):
-    with open(f'{year}/Day{day}/input.txt', 'r') as input:
+    with open(f'Y{year}/Day{day}/input.txt', 'r') as input:
         lines = "".join(input.readlines()).split("\n")
         return lines
 
 def get_input_split_lines(year,day):
-    with open(f'{year}/Day{day}/input.txt', 'r') as input:
+    with open(f'Y{year}/Day{day}/input.txt', 'r') as input:
         lines = input.readlines()
         return lines
 
