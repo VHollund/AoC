@@ -95,7 +95,6 @@ def part1(data):
 
 
 def part2(data):
-    occupied=sum([y for x, y in dirSizes.items()])
     needed=30000000-(70000000-sum(get_values(data)))
     key = min(dirSizes, key=lambda x: (dirSizes[x] - needed) if dirSizes[x] >= needed else float("inf"))
     print(key+":"+str(dirSizes[key]))
