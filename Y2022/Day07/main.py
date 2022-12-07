@@ -7,7 +7,6 @@ needed = 24933642
 
 
 def get_sizes():
-    print(dirSizes)
     print(sum([y for x, y in dirSizes.items() if y < 100000]))
 
 def get_values(dictionary):
@@ -33,8 +32,7 @@ def summarize_directories(dictKey, data, currentPath):
             if dictKey in dirSizes.keys():
                 dirSizes[dictKey] += currsize
             else:
-                dirSizes[".".join(currentPath)] = currsize
-            print(f"Directory {dictKey} has a total size of {currsize}")
+                dirSizes["/".join(currentPath)] = currsize
     return currsize
 
 
@@ -88,7 +86,6 @@ def part1(data):
     current = []
     for x in data:
         command(x, files, current, [getFiles])
-    print(json.dumps(files, indent=4))
     summarize_directories("/", files, [])
     get_sizes()
     return files
