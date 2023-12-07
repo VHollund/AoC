@@ -12,7 +12,7 @@ standard_setup = [
     "\tpass\n",
     "\n",
     "\n",
-    "def day(data):",
+    "def day(data):\n",
     "\tpart1(data)\n",
     "\tpart1(data)\n",
     "\n",
